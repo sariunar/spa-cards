@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.card{
+    background-color:rgba(66, 53, 33, 0.5);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    transition: .5s;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.card:hover{
+    transform: scale(1.03);
+    background-color: rgba(255,255,255,0.8);
+}
+.card img{
+    height: 200px;
+    border-radius: 1rem 1rem 0 0;
+}
+.card__detail{
+    display: flex;
+    flex-direction: column;
+}
+.card .card__detail .title{
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+.card .card__detail .amount{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0.2rem;
+}
+.container-cards{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.4fr));
+    grid-gap:20px;
+    box-sizing: border-box;
+}
+
+.overview{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-height: 100%;
+    background-color: rgb(109, 54, 54);
+    opacity: 0.9;
+    color: white;
+    box-sizing: border-box;
+    padding: 1rem;
+    transition: all 0.4s ease-in-out;
+    overflow-y: auto;
+    transform: translateY(101%);
+}
+.card:hover .overview{
+    transform: translateY(0%);
+}
