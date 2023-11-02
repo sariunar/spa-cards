@@ -1,3 +1,8 @@
+React app for searching books with API 
+
+![image](https://github.com/sariunar/spa-cards-books/assets/90380387/67650081-568b-4066-a4df-1370b0bc27a0)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
